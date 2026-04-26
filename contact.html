@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | Contact</title>
+  <meta name="description" content="Contact page with direct contact links and a working form backend template.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" sizes="any">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-title">Abdullah Baatyah</span>
+        <span class="brand-subtitle">IT Science Student | Web Developer</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Labs</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div class="container two-column-layout">
+      <aside class="sidebar-card">
+        <div class="profile-photo">
+          <img src="images/photoMe.jpeg" alt="Abdullah Baatyah profile photo">
+        </div>
+
+        <h2>Contact Info</h2>
+        <section class="info-block contact-info">
+          <p><strong>Email:</strong></p>
+          <p><a href="mailto:aabaatyah0001@stu.kau.edu.sa">aabaatyah0001@stu.kau.edu.sa</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+966545553132">+966 54 555 3132</a></p>
+        </section>
+
+        <div class="social-links">
+          <a href="https://github.com/Baatyah">
+            <img src="images/github.png" alt="GitHub">
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/abdullah-baatyah-a94991354/">
+            <img src="images/linkedin.png" alt="LinkedIn">
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </aside>
+
+      <section class="content-panel">
+        <h1>Contact Me</h1>
+
+        <form
+          class="contact-form clean-form"
+          action="https://formsubmit.co/aabaatyah0001@stu.kau.edu.sa"
+          method="POST"
+        >
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New portfolio contact message">
+          <input type="hidden" name="_template" value="table">
+
+          <div class="form-row">
+            <label for="name">Name:</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email:</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <div class="radio-row">
+            <span>Message Type:</span>
+            <label><input type="radio" name="message_type" value="Inquiry" checked> Inquiry</label>
+            <label><input type="radio" name="message_type" value="Feedback"> Feedback</label>
+          </div>
+
+          <button class="submit-button" type="submit">Send</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Abdullah Baatyah - CPIT 405 Portfolio</p>
+    </div>
+  </footer>
+</body>
+</html>
