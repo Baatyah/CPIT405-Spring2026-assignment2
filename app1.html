@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | App 1</title>
+  <meta name="description" content="App 1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" sizes="any">
+</head>
+<body class="projects-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-title">Abdullah Baatyah</span>
+        <span class="brand-subtitle">IT Science Student | Web Developer</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Labs</a></li>
+          <li><a class="active" href="myworks.html">My Works</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div class="container two-column-layout">
+      <aside class="sidebar-card">
+
+
+        <h2>App Summary</h2>
+        <section class="info-block app-summary">
+          <p>A simple interactive game against the computer. Choose rock, paper, or scissors and the page updates the result instantly using plain JavaScript.</p>
+          <p> Your game score are saved in your browser using <strong>localStorage</strong>   they will still be here when you come back.</p>
+
+        </section>
+
+        <h2>Quick Links</h2>
+        <section class="info-block">
+          <div class="sidebar-links">
+            <a class="sidebar-link" href="myworks.html">Back to My Works</a>
+            <a class="sidebar-link active" href="app2.html">Open App 2</a>
+          </div>
+        </section>
+      </aside>
+
+      <section class="content-panel projects-content">
+        <div class="projects-intro">
+          <h1 id="app1"> Rock Paper Scissors</h1>
+
+        </div>
+
+        <section class="app-card game-card">
+          <h2>Choose Your Move</h2>
+          <p class="game-intro">First, select your move. The computer will respond randomly, then the round winner and updated score will appear below.</p>
+
+          <div class="rps-actions" aria-label="Rock paper scissors controls">
+            <button class="task-button rps-button" type="button" data-choice="rock">Rock</button>
+            <button class="task-button rps-button" type="button" data-choice="paper">Paper</button>
+            <button class="task-button rps-button" type="button" data-choice="scissors">Scissors</button>
+          </div>
+
+          <div class="summary-grid" aria-label="Game score">
+            <div class="summary-box">
+              <span class="summary-label">Player</span>
+              <strong id="player-score">0</strong>
+            </div>
+            <div class="summary-box">
+              <span class="summary-label">Computer</span>
+              <strong id="computer-score">0</strong>
+            </div>
+            <div class="summary-box">
+              <span class="summary-label">Draws</span>
+              <strong id="draw-score">0</strong>
+            </div>
+          </div>
+
+          <div class="result-panel" aria-live="polite">
+            <p><strong>Your Choice:</strong> <span id="player-choice">-</span></p>
+            <p><strong>Computer Choice:</strong> <span id="computer-choice">-</span></p>
+            <p><strong>Round Result:</strong> <span id="round-result">Make your first move.</span></p>
+          </div>
+
+          <button id="reset-game" class="secondary-button" type="button">Reset Score</button>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Abdullah Baatyah - CPIT 405 Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="app1.js"></script>
+</body>
+</html>

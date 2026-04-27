@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio | App 2</title>
+  <meta name="description" content="App 2 is a JavaScript app that fetches user data from the Random User API.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" sizes="any">
+</head>
+<body class="projects-page">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-title">Abdullah Baatyah</span>
+        <span class="brand-subtitle">IT Science Student | Web Developer</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Labs</a></li>
+          <li><a class="active" href="myworks.html">My Works</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-shell">
+    <div class="container two-column-layout">
+      <aside class="sidebar-card">
+        <div class="profile-photo">
+          <img src="images/photoMe.jpeg" alt="Abdullah Baatyah profile photo">
+        </div>
+
+        <h2>App Summary</h2>
+        <section class="info-block app-summary">
+          <p>Random User Finder</p>
+          <p>Find random user profiles from the world , filter by nationality, and display the results directly .</p>
+          <p>Data is fetched live from:
+            <a href="https://randomuser.me/" target="_blank">randomuser.me</a> </p>
+        </section>
+
+        <h2>Quick Links</h2>
+        <section class="info-block">
+          <div class="sidebar-links">
+            <a class="sidebar-link" href="myworks.html">Back to My Works</a>
+            <a class="sidebar-link active" href="app1.html">Open App 1</a>
+          </div>
+        </section>
+      </aside>
+
+      <section class="content-panel projects-content">
+        <div class="projects-intro">
+          <h1 id="app2"> Random User Finder</h1>
+        </div>
+
+        <section class="app-card">
+          <h2>Find Users</h2>
+          <div class="app-form-grid">
+            <div class="form-row">
+              <label for="user-count">Number of Users</label>
+              <select id="user-count" name="user-count">
+                <option value="" selected disabled>Select number of users</option>
+                <option value="3">3 Users</option>
+                <option value="6">6 Users</option>
+                <option value="9">9 Users</option>
+                <option value="12">12 Users</option>
+                <option value="15">15 Users</option>
+                <option value="18">18 Users</option>
+                <option value="21">21 Users</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <label for="user-nationality">Nationality Filter</label>
+              <select id="user-nationality" name="user-nationality">
+                <option value="">Any Nationality</option>
+                <option value="au">Australia</option>
+                <option value="br">Brazil</option>
+                <option value="ca">Canada</option>
+                <option value="ch">Switzerland</option>
+                <option value="de">Germany</option>
+                <option value="dk">Denmark</option>
+                <option value="es">Spain</option>
+                <option value="fi">Finland</option>
+                <option value="fr">France</option>
+                <option value="gb">United Kingdom</option>
+                <option value="ie">Ireland</option>
+                <option value="in">India</option>
+                <option value="ir">Iran</option>
+                <option value="mx">Mexico</option>
+                <option value="nl">Netherlands</option>
+                <option value="no">Norway</option>
+                <option value="nz">New Zealand</option>
+                <option value="rs">Serbia</option>
+                <option value="tr">Turkey</option>
+                <option value="ua">Ukraine</option>
+                <option value="us">United States</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="api-actions">
+            <button id="fetch-users" class="submit-button" type="button">Fetch Users</button>
+          </div>
+          <p id="api-status" class="empty-state">Choose your options, then fetch user profiles.</p>
+        </section>
+
+        <section class="app-card">
+          <h2>Results</h2>
+          <div id="user-results" class="user-grid" aria-live="polite"></div>
+        </section>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Abdullah Baatyah - CPIT 405 Portfolio</p>
+    </div>
+  </footer>
+  <script src="app2.js"></script>
+</body>
+</html>
